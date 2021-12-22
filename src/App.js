@@ -1,4 +1,4 @@
-import { Grid, Typography, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 import Details from "./components/Details";
 import Main from "./components/main";
 import useStyles from './styles'
