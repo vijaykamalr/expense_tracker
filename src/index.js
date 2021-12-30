@@ -8,16 +8,16 @@ import { Provider } from "./context/context";
 const theme = createTheme();
 
 ReactDOM.render(
-    <ThemeProvider theme={theme}>
-      <SpeechProvider
-        appId="7c4aee08-1073-4a32-b862-ebe1850e0732"
-        language="en-US"
-      >
-        <Provider>
-          <App />
-        </Provider>
-      </SpeechProvider>
-      ,
-    </ThemeProvider>,
+  <ThemeProvider theme={theme}>
+    <SpeechProvider
+      appId="7c4aee08-1073-4a32-b862-ebe1850e0732"
+      language="en-US"
+    >
+      <Provider>
+        <App />
+      </Provider>
+    </SpeechProvider>
+    ,
+  </ThemeProvider>,
   document.getElementById("root")
 );
