@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Grid } from "@mui/material";
-import Details from "./components/Details";
+// import Details from "./components/Details";
 import Main from "./components/main";
 import useStyles from './styles'
 

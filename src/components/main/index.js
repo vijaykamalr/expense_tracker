@@ -10,7 +10,7 @@ import {
 import InfoCard from "./InfoCard";
 import useStyles from "./styles";
 import Form from "./Form/Form";
-import List from "./List/List";
+// import List from "./List/List";
 import { ExpenseTrackerContext } from "../../context/context";
 import Details from "../Details";
 

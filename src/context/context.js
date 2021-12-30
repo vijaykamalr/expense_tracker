@@ -15,8 +15,8 @@ export const Provider = ({ children }) => {
     );
   };
 
-  const getTransaction = async () => {
-    const data = await getTransactions();
+  const getTransaction = async (transaction={}) => {
+    const data = await getTransactions(transaction);
     console.log(data)
     setTransactions(data);
   };

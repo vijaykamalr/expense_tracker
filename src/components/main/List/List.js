@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext } from "react";
 import {
   List as MUIList,
@@ -31,8 +32,8 @@ const List = () => {
     ExpenseTrackerContext
   );
   const getTransactions = async () => {
-    const startDate = value[0] && new Date(value[0]);
-    const endDate = value[1] && new Date(value[1]);
+    const startDate = value[0] && new Date(value[0]).getTime();
+    const endDate = value[1] && new Date(value[1]).getTime();
     await getTransaction({ startDate, endDate });
   };
   return (

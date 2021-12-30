@@ -52,8 +52,10 @@ const NewTransactionForm = () => {
     }
 
     setOpen(true);
+    const date = new Date(formData.date).getTime();
     addTransaction({
       ...formData,
+      date,
       amount: Number(formData.amount),
       id: uuidv4(),
     });
